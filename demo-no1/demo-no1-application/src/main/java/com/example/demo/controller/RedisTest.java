@@ -38,9 +38,6 @@ public class RedisTest {
     private RedisTemplate<String, Object> t;
 
     @Autowired
-    private ExcelService excelService;
-
-    @Autowired
     private  RedisConnectionFactory factory;
 
     @GetMapping("/aaaa")

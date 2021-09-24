@@ -16,12 +16,13 @@
 
 
     <dependencies>
-        <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>demo-no1-application</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
+<!--        会照成循环依赖-->
+<!--        <dependency>-->
+<!--            <groupId>com.example</groupId>-->
+<!--            <artifactId>demo-no1-application</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
     </dependencies>
 
 </project>

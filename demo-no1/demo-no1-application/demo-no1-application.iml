@@ -18,8 +18,10 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="JDK8" level="project" />
+    <orderEntry type="library" name="Maven: com.github.albfernandez:javadbf:1.9.4" level="project" />
     <orderEntry type="module" module-name="demo-no1-impl" />
     <orderEntry type="library" name="Maven: com.alibaba:easyexcel:2.1.6" level="project" />
     <orderEntry type="library" name="Maven: org.apache.poi:poi:3.17" level="project" />

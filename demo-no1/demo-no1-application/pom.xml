@@ -15,6 +15,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.github.albfernandez</groupId>
+            <artifactId>javadbf</artifactId>
+            <version>1.9.4</version>
+        </dependency>
+
+        <dependency>
             <groupId>com.example</groupId>
             <artifactId>demo-no1-impl</artifactId>
             <version>0.0.1-SNAPSHOT</version>
