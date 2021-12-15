@@ -1,4 +1,4 @@
-package com.example.demo.srevice.model.dto;
+package com.example.demo.model.dto;
 
 import io.swagger.annotations.ApiModel;
 import lombok.Data;

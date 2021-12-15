@@ -33,6 +33,10 @@ import java.util.stream.Collectors;
 @Api(tags = "用户管理")
 public class User {
 
+    @GetMapping("/qw")
+    public void postttt() {
+        System.out.println(this.getClass().getPackage().getName());
+    }
     @GetMapping
     public void getDbf(HttpServletResponse response) {
         // haaaaaaaaaaaaaaaa

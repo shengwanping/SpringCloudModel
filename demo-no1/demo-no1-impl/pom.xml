@@ -16,7 +16,7 @@
 
 
     <dependencies>
-<!--        会照成循环依赖-->
+<!--        会造成循环依赖-->
 <!--        <dependency>-->
 <!--            <groupId>com.example</groupId>-->
 <!--            <artifactId>demo-no1-application</artifactId>-->

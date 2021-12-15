@@ -1,4 +1,4 @@
-package com.example.demo.srevice.model.condition;
+package com.example.demo.model.condition;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

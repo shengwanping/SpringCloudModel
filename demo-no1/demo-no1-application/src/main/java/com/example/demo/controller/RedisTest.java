@@ -1,18 +1,10 @@
 package com.example.demo.controller;
 
-import com.example.demo.entity.UserEntity;
-import com.example.demo.srevice.ExcelService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.connection.RedisConnectionFactory;
-import org.springframework.data.redis.core.RedisOperations;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.data.redis.core.ValueOperations;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Date;
 
 /**
  * @author shengwanping
@@ -28,29 +20,13 @@ import java.util.Date;
 @RestController
 public class RedisTest {
 
-    @Autowired
-    private StringRedisTemplate stringRedisTemplate;
 
-    @Autowired
-    private RedisOperations redisTemplate;
-
-    @Autowired
-    private RedisTemplate<String, Object> t;
-
-    @Autowired
-    private  RedisConnectionFactory factory;
-
-    @GetMapping("/aaaa")
-    public void test002() {
-        ValueOperations<String, Object> redisString =  redisTemplate.opsForValue();
-        // SET key value: 设置指定 key 的值
-        redisString.set("strKey3", "hello spring boot redis");
-        // GET key: 获取指定 key 的值
-        String value = (String) redisString.get("strKey1");
-        System.out.println(value);
-
-        redisString.set("strKey2", new UserEntity("小红", 023, new Date()));
-        UserEntity user = (UserEntity) redisString.get("strKey2");
-        System.out.println(user);
+    /**
+     * 如果没有使用缓存中间件，Spring Boot 会使用默认的缓存，我们只需启用即可
+     */
+    @GetMapping
+    @ApiOperation("测试缓存1")
+    public void testCache(){
+        
     }
 }

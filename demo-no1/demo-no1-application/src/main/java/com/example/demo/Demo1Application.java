@@ -1,15 +1,17 @@
 package com.example.demo;
 
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.cache.annotation.EnableCaching;
 
 /**
- * @author dataofx
+ * @author swp
  */
-@ComponentScan(basePackages = "com.example")
+@MapperScan(value = "com.example.demo.dao")
 @SpringBootApplication
+@EnableCaching
 public class Demo1Application {
 
     public static void main(String[] args) {
